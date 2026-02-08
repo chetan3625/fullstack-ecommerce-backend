@@ -5,7 +5,7 @@ const mongoose=require('mongoose');
 
 connectDB();
 
-app.get('/', (req, res) => {
+app.get('/getbackend', (req, res) => {
   res.send('Backend is live 🚀');
 });
 
