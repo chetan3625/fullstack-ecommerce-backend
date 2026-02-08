@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
     try {
         await connectDB();
         app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`);
+            console.log(`Backend is Live ${PORT}`);
         });
     } catch (err) {
         // If the DB is unreachable, exit so container/process restarts and logs are visible
