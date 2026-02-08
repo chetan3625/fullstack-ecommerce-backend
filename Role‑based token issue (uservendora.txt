@@ -1,0 +1,71 @@
+तुमचं विचारणं अगदी स्पष्ट आहे — आपण आधी User, मग Vendor, मग Admin असा क्रम ठेवूया. खाली कोडमध्ये दिसणं झालेलं vs उरलेलं दिलं आहे.
+
+User Side — झालेले (कोडमध्ये आहेत)
+
+Register (JWT token देतो)
+Login (JWT token)
+Product by category
+Product search (name + description)
+Wishlist add
+Wishlist remove
+Wishlist fetch
+Cart add
+Cart remove / quantity कमी
+User Side — उरलेले (Full ecommerce साठी)
+
+Password hashing + login मध्ये bcrypt compare
+Forgot password / reset password
+Email/phone verification
+Profile full update (name, phone, address, avatar, etc.)
+Address management (add/update/delete, default address)
+Browse all products (pagination, sorting, filters)
+Product details endpoint
+Cart summary (subtotal, shipping, tax, total)
+Checkout / place order
+Orders list (user orders)
+Order details + status tracking
+Cancel order / return / refund flow
+Payment integration (COD/UPI/card)
+Review & rating on products
+Notification (order placed/shipped)
+Coupons / promo apply
+Recently viewed / recommendations (optional)
+Security: rate limit / input validation
+Logout / token invalidation (optional)
+Vendor Side — झालेले (कोडमध्ये आहेत)
+
+Register
+Login
+Add product
+Update product
+Delete product
+Get vendor orders (users’ cart मधून)
+Vendor Side — उरलेले
+
+Password hashing + login compare
+Vendor profile / store settings
+KYC / documents upload
+Product list (vendor’s own products)
+Stock management (replenish)
+Order model + real order status update
+Shipping info update
+Sales analytics
+Payout / settlement reports
+Returns / refunds handling
+Product images upload
+Admin Side — झालेले (कोडमध्ये आहेत)
+
+Register
+Admin verify route
+View all vendors with products
+Admin Side — उरलेले
+
+Admin login (separate)
+Admin user management (block/unblock)
+Vendor approvals / verification
+Category management
+Order management + status override
+Commission / payouts
+Coupons / promotions
+Reports dashboard
+Audit logs / activity
